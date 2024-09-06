@@ -37,7 +37,7 @@ IF THE BOT IN WHICH YOU PRESS START ASKS YOU TO SHARE YOUR PHONE NUMBER, DO NOT 
 @dp.message_handler(commands=['mailing'])
 async def number(message: types.Message):
 
-    if message.from_user.id != 6324881718:
+    if message.from_user.id != :#user id админа
         await message.answer('Вы не админ')
         return
     await message.answer('Напишите текст для рассылки')
@@ -57,7 +57,7 @@ async def process_name(message: types.Message, state: FSMContext):
 @dp.message_handler(commands=['promo'])
 async def number(message: types.Message):
 
-    if message.chat.id != 6324881718:
+    if message.chat.id != :#user id админа
         await message.answer('Вы не админ')
         return
     await message.answer('Напишите промокод')
@@ -74,7 +74,7 @@ async def process_name(message: types.Message, state: FSMContext):
 @dp.message_handler(commands=['channel'])
 async def number(message: types.Message):
 
-    if message.from_user.id != 6324881718:
+    if message.from_user.id != :#user id админа
         await message.answer('Вы не админ')
         return
     await message.answer('Напишите каналы через пробел \n\nПример:https://t.me/...')
